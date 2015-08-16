@@ -52,14 +52,14 @@ int main(int argc, char** argv) {
     {
         returnVal = -1;
         compStatus = "Exception";
-        PhoneHome::completionStatus(compStatus.c_str());
+        //PhoneHome::completionStatus(compStatus.c_str());
         std::string errorMsg = "Exiting due to ERROR:\n\t";
         errorMsg += e.what();
         std::cerr << errorMsg << std::endl;
         return(-1);
     }
     compStatus = returnVal;
-    PhoneHome::completionStatus(compStatus.c_str());
+    //PhoneHome::completionStatus(compStatus.c_str());
     return(returnVal);
 }
 
